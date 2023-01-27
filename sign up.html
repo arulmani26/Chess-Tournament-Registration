@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    #popup
+    {
+        font-family:'Times New Roman';
+        position:absolute;
+        top:10%;
+        bottom:10%;
+        left:20%;
+        right:20%;
+        display:none;
+        border-radius:25px;
+        background-color: white;
+        /* border-width:2px; 
+         border-color:black; 
+         border-style:solid; */
+        padding: 2% 2% 2% 2%;
+        cursor:pointer;
+        text-align:justify;
+        background-image: linear-gradient(to bottom right,#eee,#60DFEA,#4079E3,#8C5CE5);
+    }
+    #close-btn
+    {
+        float:right;
+        transform:rotate(45deg);
+        font-style:bold;
+        font-size:50px;
+    }
+    #terms
+    {
+        color:#8C5CE5;
+        text-decoration: underline;
+        cursor:pointer;
+    }
+</style>
+<body>
+    <section class="vh-100" style="background-color: #eee;background-image: url('https://wallpaper.dog/large/20553390.jpg'); background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%; font-family: 'Times New Roman'">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+              <div class="card text-black" style="border-radius: 25px;">
+                <div class="card-body">
+                  <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+      
+                      <p class="text-center h1 fw-bold mb-2 mx-1 mx-md-4 mt-2">Sign up</p>
+      
+                      <form class="mx-1 mx-md-4">
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="text" id="form3Example1c" class="form-control" />
+                            <label class="form-label" for="form3Example1c">Your Name</label>
+                          </div>
+                        </div>
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="email" id="form3Example3c" class="form-control" />
+                            <label class="form-label" for="form3Example3c">Your Email</label>
+                          </div>
+                        </div>
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="password" id="form3Example4c" class="form-control" />
+                            <label class="form-label" for="form3Example4c">Password</label>
+                          </div>
+                        </div>
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="password" id="form3Example4cd" class="form-control" />
+                            <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                          </div>
+                        </div>
+      
+                        <div class="form-check d-flex justify-content-center mb-5">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                          <label class="form-check-label" for="form2Example3">
+                            I agree all statements in <a id="terms">Terms of service</a>
+                          </label>
+                        </div>
+      
+                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                         <a href="login.html"><button type="button" class="btn btn-lg" style="background-color:#8C5CE5; color:#eee">Register</button></a>
+                        </div>
+      
+                      </form>
+      
+                    </div>
+                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+      
+                      <img src="https://cdni.iconscout.com/illustration/premium/thumb/sign-up-3391266-2937870.png"
+                        class="img-fluid" alt="Sample image">
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="popup">
+        <span id="close-btn">+</span><br>
+        <h1>Terms Of Service</h1><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By using our Service you agree to the terms in this Agreement.
+        If you do not agree, then you should not use our Service, as further defined below. Your use of the Service is deemed a “continuing acceptance” of this Agreement, meaning that every time that you use the Service you accept the then-current version of the Agreement or any of the Other Policies, even if they have changed (without notice to you) since the last time that you used the Service.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To enter into this Agreement, use the Service, and/or create an account with us, you must be at least 13 years of age or older.
+        If you are not of legal age in your jurisdiction but are at least 13 years of age, then your parent or legal guardian must consent to this Agreement on your behalf prior to your use of the Services and you may only use the Services with the involvement of your parent or legal guardian. If you are under the age of 13 you may not use the Service. If you enter into this Agreement, then you are affirming that you meet these requirements and we are permitted to reasonably rely on that.
+        <br><br>1.Do not cheat or receive assistance in games (from a chess computer, book, database or another person)
+        <br>2.Be nice and courteous to all other players, always.
+        <br>3.Don't do bad things or break any laws.
+        <br>4.Enjoy the site
+    </div>
+    <script>
+        var terms=document.getElementById("terms");
+        var popup=document.getElementById("popup");
+        var clo=document.getElementById("close-btn");
+        terms.onclick= function ()
+        {
+            popup.style.display="block";
+        }
+        clo.onclick = function ()
+        {
+            popup.style.display="none";
+        }
+    </script>
+</body>
+</html>

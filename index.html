@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Admin Panel</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><i class="fa fa-desktop"></i> Dashboard <span class="sr-only">(current)</span></a></li>
+          <!-- <li><a href="#"><i class="fa fa-cog fa-spin"></i> Settings</a></li> -->
+  <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+  <li><a href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="#"><i class="fa fa-user-plus"></i> Add Users</a></li> -->
+          <li><a href="#"><i class="fa fa-files-o"></i> Add Categories</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container-fluid">
+  <div class="row">
+<div class="col-sm-3 col-md-2">
+
+<ul class="nav nav-sidebar">
+  <li><a href="#"><i class="fa fa-credit-card-alt"></i>&nbsp;&nbsp; Payment Details</a></li>
+  <li><a href="#"><i class="fa fa-cogs"></i>&nbsp;&nbsp; Settings</a></li>
+  <li><a href="#"><i class="fa fa-user-plus"></i>&nbsp;&nbsp;Add User</a></li>
+  <li><a href="login.html"><i class="fa fa-lock"></i>&nbsp;&nbsp;&nbsp;Logout</a></li>
+</ul>
+</div>
+    <div class="col-sm-9 col-md-10">
+    <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-header"><i class="fa fa-code-fork"></i> Admin Panel</h1>
+    </div>
+</div>
+     <div class="row">
+
+       <div class="col-md-3">
+         <img src="knight che.jpg" alt="Graph1" class="img-responsive">
+         <h1>Knight</h1>
+         <p class="lead"><a class="text-white-50" href="#"><i>Edit Category</i></a><br></p> 
+      </div>
+      <div class="col-md-3">
+        <img src="rook ch.jpg" alt="Graph2" class="img-responsive">
+     <h1>Rook</h1>
+     <p class="lead"><a class="text-white-50" href="#"><i>Edit Category</i></a><br></p> 
+     </div>
+     <div class="col-md-3">
+       <img src="queen ch.jpg" alt="Graph3" class="img-responsive">
+       <h1>Queen</h1>
+       <p class="lead"><a class="text-white-50" href="#"><i>Edit Category</i></a><br></p>                          
+    </div>
+    <div class="col-md-3">
+      <img src="king ch.jpg" alt="Graph4" class="img-responsive">
+      <h1>King</h1>
+      <p class="lead"><a class="text-white-50" href="#"><i>Edit Category</i></a><br></p> 
+   </div>
+   <h1 class="text-muted"><b>Total Count</b></h1>
+       <div class="row">
+   <div class="col-md-12 table-responsive">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Registration Type</th>
+      <th>Amount per Registration</th>
+      <th>No.of Registration</th>
+      <th>Amount received</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Knight</td>
+      <td>500</td>
+      <td>455</td>
+      <td>Rs.2,27,500</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Rook</td>
+      <td>600</td>
+      <td>372</td>
+      <td>Rs.2,23,200</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Queen</td>
+      <td>750</td>
+      <td>287</td>
+      <td>Rs.2,15,250</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>King</td>
+      <td>1000</td>
+      <td>226</td>
+      <td>Rs.2,26,000</td>
+    </tr>
+  </tbody>
+
+</table>
+</div>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+<footer>
+ <h1 class="display-1 text-muted">
+  <i class="fa fa-paw"></i>&nbsp;&nbsp;Admin Page</h1>
+</footer>
+</body>
+</html>
